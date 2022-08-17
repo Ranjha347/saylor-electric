@@ -1,0 +1,140 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+nav ul li a {
+          margin: 0 25px;
+          font-size: 15px
+}
+.before-after-line::before,.before-after-line2::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 10%;
+          height: 3px;
+          background: rgb(241, 218, 9);
+          transform: translateX(-50%);
+}
+
+.before-after-line::after,.before-after-line2::after{
+          content: "";
+          position: absolute;
+          bottom: -3px;
+
+          left: 50%;
+          width: 10%;
+          height: 3px;
+          background: rgb(241, 218, 9);
+          transform: translateX(-50%);
+}
+.before-after-line2::before,.before-after-line2::after{
+          width: 20%;
+}
+.footer{
+          background: #000;
+          color: #fff;
+          padding: 20px 0 0;
+}
+.footer-nav-menu ul li{
+          list-style: none;
+          padding: 12px 0;
+}
+.footer-nav-menu ul li a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 15px;
+          transition: all 0.3s ease;
+}
+.footer-nav-menu ul li a:hover{
+          color: rgb(241, 218, 9);
+}
+.footer-second-section span:not(:first-child){
+          border-left: 1px solid #fff;
+          padding: 0 10px;
+}
+.footer-third-section{
+          padding: 20px 0;
+          display: flex;
+          justify-content: center
+}
+.footer-third-section ul{
+          list-style: none;
+          display: flex;
+}
+.footer-third-section ul li{
+          margin: 0 10px;
+}
+.footer-fourth-section span:not(:first-child){
+          border-left: 1px solid #fff;
+          padding: 0 10px;
+}
+.footer-last-section{
+          box-shadow: 0 0 10px rgba(250, 248, 248, 0.5);
+}
+.schedule{
+          padding: 20px 0;
+          background-image: url(../images/strippers.jpg);
+
+}
+.services,.schedule{
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+          font-weight: 400;
+}
+.services{
+          background-image: linear-gradient(rgba(255, 255, 255, 0.781),#fff), url(../images/service.jpg);
+}
+.card{
+          border-radius: 20px !important;
+}
+input,textarea{
+          border: 2px solid #ffc107!important;
+          outline: 0!important;
+          box-shadow: none!important;
+          background-color: transparent!important;
+          color: #fff!important;
+          border-radius: 7px!important;
+}
+label{
+          color: #fff;
+          font-size: 15px;
+          font-weight: 400;
+}
+.about-images1,.about-images2{
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+}
+.about-images1{
+          border-radius: 0 0 30px 0;
+}
+.about-images2{
+          border-radius: 0 30px 0 0;
+}
+.banner{
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../images/kit2.jpg);  
+            background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          position: relative;
+          font-weight: 400;
+          height: 100vh;
+         
+}
+.div-for-shadow-on-image{
+          box-shadow: 10px 0px 70px 80px white;
+          width: 100%;
+          position: absolute;
+          height: 50px;
+          line-height: 0!important;
+         
+}
+@media screen and (max-width: 520px){
+          .service-img{
+                    margin-top:8%;
+          }
+}
